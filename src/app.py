@@ -45,7 +45,7 @@ if st.button("Predict"):
             prediction = model.predict(transformed_sms)[0]
 
             # Show Result
-            if prediction == 1:
+            if prediction == 0:
                 st.error("🚨 Spam Message")
             else:
                 st.success("✅ Not Spam Message")
